@@ -888,6 +888,7 @@ public class IOUtils {
             pos1 = 0;
             pos2 = 0;
             for (int index = 0; index < DEFAULT_BUFFER_SIZE; index++) {
+
                 if (pos1 == index) {
                     do {
                         count1 = input1.read(array1, pos1, DEFAULT_BUFFER_SIZE - pos1);
