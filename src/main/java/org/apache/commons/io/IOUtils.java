@@ -893,7 +893,7 @@ public class IOUtils {
                         count1 = input1.read(array1, pos1, DEFAULT_BUFFER_SIZE - pos1);
                     } while (count1 == 0);
                     if (count1 == EOF) {
-                        return pos2 == index || input2.read() == EOF;
+                        return pos2 == index && input2.read() == EOF;
                     }
                     pos1 += count1;
                 }
